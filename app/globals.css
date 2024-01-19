@@ -1,27 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.section-yellow{
+  background-color: #FAFD5D;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.section-white{
+  background-color: #E2E2E2;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-blaniw{
+  background-image: url(/blaniw.png);
+}
+
+.bg-hero{
+  background-image: url(/hero.png);
+}
+
+.bg-other{
+  background-image: url(/other.png);
+}
+
+.bg-mongow{
+  background-image: url(/mongow.png);
+}
+
+.bg-winPortfolio{
+  background-image: url(/winPortfolio.png);
+}
+
+.links-hover:hover{
+  color: white;
+  background-color: transparent;
+  border: solid 2px white;
 }
